@@ -1,0 +1,36 @@
+li {
+  width: calc((100vw - 98px) / 4);
+  height: calc((100vw - 98px) / 4);
+  float: left;
+  background-color: #2A2A29;
+  color: white;
+  display: flex;
+
+  img {
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 6vw;
+    text-align: center;
+    margin: auto auto;
+  }
+
+  p {
+    font-size: 1.9vw;
+    text-align: center;
+    margin: auto auto;
+    padding: 16px;
+  }
+}
+
+@media (max-width: 1024px) {
+  li {
+    width: calc((100vw - 38px) / 2);
+    height: calc((100vw - 36px) / 2);
+    
+    p {
+      font-size: 3.6vw;
+    }
+  }
+}

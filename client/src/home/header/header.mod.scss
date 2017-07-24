@@ -1,0 +1,267 @@
+.header {
+  background-image: url('../imgs/background.jpg');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  height: 100vh;
+
+  .headerBar {
+    height: 108px;
+    background-color: rgba(216, 216, 216, 0.8);
+
+    .shears {
+      display: block;
+      position: absolute;
+      padding: 16px 0px 16px 0px;
+      height: 10px;
+
+      svg {
+        height: 80px;
+      }
+    }
+
+    h1 {
+      user-select: none;
+      margin: 0;
+      font-size: 108px;
+      text-align: center;
+    }
+  }
+
+  .logoArea {
+    background-color: rgba(216, 216, 216, 0.8);
+    height: 300px;
+    width: 800px;
+    margin: 140px auto;
+
+    svg {
+      user-select: none;
+      margin: 10px 28px;
+      height: 280px;
+      width: auto;
+    }
+  }
+
+  .headerDetails {
+    display: flex;
+    flex-direction: column;
+
+    ul {
+      list-style: none;
+      text-align: center;
+      padding: 0;
+      
+      li {
+        display: inline-flex;
+        float: none;
+        background-color: rgba(216, 216, 216, 0.8);
+        width: 400px;
+        height: 150px;
+        margin: 16px;
+        color: black;
+
+        span {
+          margin: auto 0 auto 24px;
+
+          svg {
+            display: flex;
+            width: 64px;
+            height: 64px;
+          }
+        }
+
+        a {
+          display: flex;
+          text-decoration: none;
+        }
+
+        .info {
+          margin: auto 0 auto 16px;
+          
+          h2 {
+            user-select: none;
+            font-size: 58px;
+            margin: 0;
+          }
+
+          h3 {
+            font-size: 42px;
+            margin: 0;
+            color: black;
+          }
+
+          h4 {
+            user-select: none;
+            font-size: 36px;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1480px) {
+  .header {
+    height: auto;
+
+    .headerBar {
+      height: 80px;
+
+      .shears {
+        svg {
+          height: 50px;
+        }
+      }
+
+      h1 {
+        font-size: 84px;
+      }
+    }
+
+    .logoArea {
+      height: 180px;
+      width: 480px;
+      margin: 100px auto;
+
+      svg {
+        height: 160px;
+        width: 436px;
+      }
+    }
+
+    .headerDetails {
+      ul {
+        li {
+          width: 300px;
+          height: 112px;
+          
+          span {
+            svg {
+              width: 48px;
+              height: 48px;
+            }
+          }
+
+          .info {
+            margin: auto 0 auto 8px;
+            
+            h2 {
+              font-size: 42px;
+            }
+
+            h3 {
+              font-size: 32px;
+            }
+
+            h4 {
+              font-size: 28px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .header {
+    .logoArea {
+      margin: 44px auto;
+    }
+
+    .headerDetails {
+      ul {
+        li {
+          width: 224px;
+          height: 90px;
+          
+          span {
+            margin: auto 0 auto 12px;
+
+            svg {
+              width: 48px;
+              height: 48px;
+            }
+          }
+
+          .info {
+            margin: auto 0 auto 8px;
+            
+            h2 {
+              font-size: 34px;
+            }
+
+            h3 {
+              font-size: 22px;
+            }
+
+            h4 {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 780px) {
+  .header {
+    background-size: auto 480px;
+
+    .headerBar {
+      height: 40px;
+
+      .shears {
+        display: none;
+      }
+
+      h1 {
+        font-size: 42px;
+      }
+    }
+
+    .logoArea {
+      height: 138px;
+      width: 372px;
+      margin: 32px auto;
+
+      svg {
+        height: 120px;
+        width: 327px;
+      }
+    }
+
+    .headerDetails {
+      ul {
+        li {
+          width: 160px;
+          height: 72px;
+          
+          span {
+            svg {
+              width: 28px;
+              height: 28px;
+            }
+          }
+
+          .info {
+            margin: auto 0 auto 8px;
+            
+            h2 {
+              font-size: 24px;
+            }
+
+            h3 {
+              font-size: 16px;
+            }
+
+            h4 {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

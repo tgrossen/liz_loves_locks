@@ -1,0 +1,63 @@
+.bio {
+  height: 38vw;
+  background-color: black;
+  margin-top: 16px;
+  display: flex;
+
+  img {
+    height: 100%;
+    width: auto;
+  }
+
+  p {
+    color: white;
+    width: 45vw;
+    font-size: 1.9vw;
+    position: absolute;
+    text-align: right;
+    right: 0;
+    margin-right: 26px;
+  }
+
+  h1 {
+    font-family: "Apple Chancery";
+    color: white;
+    position: absolute;
+    text-align: right;
+    right: 0;
+    margin-right: 26px;
+    margin-top: 29vw;
+    font-size: 5vw;
+  }
+
+  h2 {
+    font-family: "Apple Chancery";
+    color: white;
+    position: absolute;
+    text-align: right;
+    right: 0;
+    margin-right: 26px;
+    margin-top: 34vw;
+    font-size: 2vw;
+  }
+}
+
+@media (max-width: 1024px) {
+  .bio {
+    height: 120vw;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    p {
+      margin: 26px 26px auto;
+      font-size: 4vw;
+      width: auto;
+      position: static;
+    }
+  }
+}
