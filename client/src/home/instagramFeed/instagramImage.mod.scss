@@ -1,0 +1,39 @@
+.instagramImage {
+  width: calc(100vw / 4);
+  height: calc(100vw / 4);
+  cursor: pointer;
+
+  img {
+    position: relative;
+  }
+
+  .overlay {
+    position: absolute;
+    width: calc(100vw / 4);
+    height: calc(100vw / 4);
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+
+    p {
+      font-size: 1.3vw;
+      user-select: none;
+      text-align: left;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .instagramImage {
+    width: calc(100vw / 2);
+    height: calc(100vw / 2);
+
+    .overlay {
+      width: calc(100vw / 2);
+      height: calc(100vw / 2);
+      
+      p {
+        font-size: 2.5vw;
+      }
+    }
+  }
+}

@@ -5,6 +5,7 @@ import HairSection from '../hairSection'
 import Bio from '../bio'
 import NailsSection from '../nailsSection'
 import LashesSection from '../lashesSection'
+import InstagramFeed from '../instagramFeed'
 import * as css from "./main.mod.scss"
 
 interface MainProps extends StyleableProps {}
@@ -14,9 +15,10 @@ const Main = (props: MainProps) => {
     <div className={props.css.main}>
       <Header />
       <HairSection />
-       <Bio /> 
+      <Bio /> 
       <NailsSection />
       <LashesSection />
+      <InstagramFeed />
     </div>
   )
 }
