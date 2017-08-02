@@ -9,21 +9,20 @@ import * as css from './instagramFeed.mod.scss'
 interface InstagramFeedProps extends StyleableProps {
   media: InstagramMediaResult
   selectedImageId: string
-  fetchInstagramMedia: (userId: string) => void
+  fetchInstagramMedia: () => void
   selectInstagramImage: (imageId: string) => void
 }
 
-const userId = 'liz_loves_locks'
 
 const InstagramFeed = (props: InstagramFeedProps) => {
   if (!props.media || props.media == null) {
-    props.fetchInstagramMedia(userId)
+    props.fetchInstagramMedia()
     return null
   }
 
   return (
     <ul className={props.css.instagramFeed}>
-      {props.media.items.map(item => <InstagramImage selectedImageId={props.selectedImageId} userId={userId} item={item} selectInstagramImage={props.selectInstagramImage} />)}
+      {props.media.items.map(item => <InstagramImage selectedImageId={props.selectedImageId} item={item} selectInstagramImage={props.selectInstagramImage} />)}
     </ul>
   )
 }
@@ -31,7 +30,7 @@ const InstagramFeed = (props: InstagramFeedProps) => {
 export default connect(
   state => ({ ...state.instagramFeed }),
   dispatch => ({
-    fetchInstagramMedia: (userId: string) => dispatch(fetchInstagramMedia(userId)),
+    fetchInstagramMedia: () => dispatch(fetchInstagramMedia()),
     selectInstagramImage: (imageId: string) => dispatch(selectInstagramImage(imageId))
   })
 )(styleable(css)(InstagramFeed))

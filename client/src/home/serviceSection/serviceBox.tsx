@@ -10,7 +10,7 @@ export interface ServiceBoxProps extends StyleableProps {
 const ServiceBox = (props: ServiceBoxProps) => {
   if (props.type == 'image') {
     return (
-      <li>
+      <li key={`image-${props.info}`}>
         <img src={props.info} />
       </li>
     )
@@ -18,7 +18,7 @@ const ServiceBox = (props: ServiceBoxProps) => {
 
   if (props.type == 'header') {
     return (
-      <li>
+      <li key={`header-${props.info}`}>
         <h2>{props.info}</h2>
       </li>
     )
@@ -26,7 +26,7 @@ const ServiceBox = (props: ServiceBoxProps) => {
 
   if (props.type == 'info') {
     return (
-      <li>
+      <li key={`info-${props.info}`}>
         <p>{props.info}</p>
       </li>
     )

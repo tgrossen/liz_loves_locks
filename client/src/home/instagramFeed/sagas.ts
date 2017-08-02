@@ -3,8 +3,8 @@ import { fetchInstagramMedia } from './effects'
 import { instagramFeedStateUpdated } from './actions'
 import { getInstagramFeedState } from './selectors'
 
-export function* instagramMediaRequested(action: { userId: string }): any {
-  const media = yield call(fetchInstagramMedia, action.userId)
+export function* instagramMediaRequested(): any {
+  const media = yield call(fetchInstagramMedia)
   yield put(instagramFeedStateUpdated({ media, selectedImageId: null }))
 }
 
