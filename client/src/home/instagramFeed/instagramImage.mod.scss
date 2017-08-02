@@ -2,9 +2,10 @@
   width: calc(94vw / 4);
   height: calc(94vw / 4);
   cursor: pointer;
+  position: relative;
 
   img {
-    position: relative;
+    position: absolute;
   }
 
   .overlay {
