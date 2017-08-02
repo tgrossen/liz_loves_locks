@@ -12,7 +12,6 @@ const initialState: InstagramFeedState = {
 }
 
 export default (state = initialState, action?: any) => {
-  console.log(action.state)
   const handlers = {
     [INSTAGRAM_FEED_STATE_UPDATED]: () => ({ ...action.state })
   }
