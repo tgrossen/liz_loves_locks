@@ -21,9 +21,12 @@ const InstagramFeed = (props: InstagramFeedProps) => {
   }
 
   return (
-    <ul className={props.css.instagramFeed}>
-      {props.media.items.map(item => <InstagramImage selectedImageId={props.selectedImageId} item={item} selectInstagramImage={props.selectInstagramImage} />)}
-    </ul>
+    <div>
+      <h2 className={props.css.feedHeader}>INSTA FEED</h2>
+      <ul className={props.css.instagramFeed}>
+        {props.media.items.map(item => <InstagramImage selectedImageId={props.selectedImageId} item={item} selectInstagramImage={props.selectInstagramImage} />)}
+      </ul>
+    </div>
   )
 }
 

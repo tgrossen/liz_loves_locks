@@ -1,7 +1,18 @@
+.feedHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d8d8d8;
+  width: 94vw;
+  text-align: center;
+  margin: 16px auto 0;
+  font-size: 64px;
+}
+
 .instagramFeed {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 16px;
   padding: 0;
   justify-content: center;
+  margin-top: 0;
 }
